@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "JK CINE PLAY",
+    "slug": "jk-cine-play",
+    "version": "1.0.0",
+    "orientation": "landscape",
+    "icon": "./assets/ic_launcher.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "android": {
+      "package": "com.jkcineplay.app",
+      "versionCode": 1,
+      "tv": true,
+      "usesCleartextTraffic": true
+    },
+    "plugins": [
+      "react-native-video"
+    ]
+  }
+}
+
