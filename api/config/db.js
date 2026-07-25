@@ -1,14 +1,12 @@
-const mysql = require('mysql2/promise');
+const { Pool } = require('pg');
 
-// Altere os dados conforme seu MySQL
-const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'SUA_SENHA_AQUI',
-  database: 'jk_cine_play',
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0
+const pool = new Pool({
+  host: 'db.dcfndqpehjksblmfho.supabase.co',
+  port: 5432,
+  user: 'postgres',
+  password: 'Database@2026JK', // <
+  database: 'postgres',
+  ssl: { rejectUnauthorized: false }
 });
 
 module.exports = pool;
